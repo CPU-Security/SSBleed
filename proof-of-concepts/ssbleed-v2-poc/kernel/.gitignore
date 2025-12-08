@@ -1,0 +1,5 @@
+*.o
+mdu_kernel.ko
+mdu_kernel.*
+fetch.sh
+Module.symvers

@@ -1,0 +1,7 @@
+poc/single_target
+poc/data/*
+load_filter/load_generators
+load_filter/data/*
+!poc/data/.gitkeep
+!load_filter/data/.gitkeep
+*.png

@@ -1,0 +1,5 @@
+data/*
+bin/*
+src/asm.S
+!bin/.gitkeep
+!data/.gitkeep
