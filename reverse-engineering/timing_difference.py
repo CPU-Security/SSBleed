@@ -28,7 +28,13 @@ def plot_distribution():
         data = json.load(f)
     distribute_0 = data[0]
     distribute_1 = data[1]
-
+    for d in distribute_0[:]:
+        if d > 100:
+            distribute_0.remove(d)
+    for d in distribute_1[:]:
+        if d > 100:
+            distribute_1.remove(d)
+            
     plt.figure(figsize=(5, 2))
     sns.kdeplot(distribute_0, shade=True, color="#4682B4", label='BLK State')
     sns.kdeplot(distribute_1, shade=True, color="#DAA520", label='SSB State')

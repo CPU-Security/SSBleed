@@ -106,7 +106,7 @@ label_{tag}:
     
     code_probe = ''
     prob_ld_offset = 228
-    probe_ld_list = [i & (~3) for i in probe_ld_list]=
+    probe_ld_list = [i & (~3) for i in probe_ld_list]
     for i in range(len(probe_ld_list)):
         j = 0
         while(j * (1 << 15) + probe_ld_list[i] < cur_addr + prob_ld_offset):
