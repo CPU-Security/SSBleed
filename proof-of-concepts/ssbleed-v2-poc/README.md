@@ -9,10 +9,12 @@ You can run and get results without modifying or deeply understanding the code. 
 ```bash
 chmod +x generate_addr.sh
 chmod +x attack.sh
-pip3 install -r req
+pip3 install -r requirements.txt
 
-./generate_addr.sh 10
+./generate_addr.sh [try-times]
 ```
+
+The `try-times` is an integer larger than 0, such as `3` or `10`, which controls the try times to find the addresses while reducing the noise.
 
 You should see output similar to:
 ```
